@@ -1,0 +1,15 @@
+version: "3"
+services:
+  mlo_admin:
+    build:
+      context: ./mlo_admin
+    restart: always
+    ports:
+      - "3001:3001"
+
+  mlo_applicant:
+    build:
+      context: ./mlo_applicant
+    restart: always
+    ports:
+      - "3002:3002"
