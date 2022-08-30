@@ -9,9 +9,9 @@ COPY ./ ./
 
 # run installer to install all npm packages
 RUN npm install
-RUN npm install pm2 -g
+#RUN npm install pm2 -g
 
 # default command to start the project
-# CMD ["npm","start"]
+CMD ["npm","start"]
 # using pm2
-CMD ["pm2-runtime", "start", "./bin/www", "mlo_applicant"]
+#CMD ["pm2-runtime", "start", "./bin/www", "mlo_applicant"]
