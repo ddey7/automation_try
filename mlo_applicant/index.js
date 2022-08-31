@@ -9,7 +9,7 @@ app.get("/", function (req, res) {
   mongoose
     .connect(DATABASE)
     .then(() => {
-     res.send("MLO Applicant Connected to Mongoose");
+     res.send("MLO Applicant Edited Connected to Mongoose");
     })
     .catch(() => {
       res.send("MLO Applicant Connection Error to Mongoose");
