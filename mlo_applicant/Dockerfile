@@ -4,12 +4,14 @@ FROM node:16
 # create a working dir in docker
 WORKDIR /try/mlo_applicant
 
-# bring all the files from pc to docker
-COPY ./ ./
+
+COPY package*.json ./
 
 # run installer to install all npm packages
 RUN npm install
-#RUN npm install pm2 -g
+
+# bring all the files from pc to docker
+COPY ./ ./
 
 # default command to start the project
 CMD ["npm","start"]
