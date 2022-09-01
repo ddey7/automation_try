@@ -16,4 +16,8 @@ app.get("/", function (req, res) {
     });
 });
 
+app.get("/user", function (req, res) {
+ res.send("applicant")
+});
+
 app.listen(3002);

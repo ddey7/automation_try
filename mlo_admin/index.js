@@ -15,4 +15,8 @@ app.get("/", function (req, res) {
     });
 });
 
+app.get("/user", function (req, res) {
+  res.send("admin")
+ });
+
 app.listen(3001);
