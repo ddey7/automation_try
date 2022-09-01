@@ -17,4 +17,4 @@ COPY ./ ./
 # default command to start the project
 #CMD ["npm","start"]
 # using pm2
-CMD ["pm2-runtime", "start", "./bin/www","--name", "mlo_applicant"]
+CMD ["pm2-runtime", "start", "./bin/www","--name", "mlo_applicant","--no-daemon"]
