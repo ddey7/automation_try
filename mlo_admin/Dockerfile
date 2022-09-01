@@ -16,6 +16,6 @@ COPY ./ ./
 #CMD pm2-runtime ./bin/www --name mlo_admin --no-daemon
 
 # default command to start the project
-CMD ["npm","start"]
+# CMD ["npm","start"]
 #using pm2
-# CMD ["pm2-runtime","npm","start","--name","mlo_admin","--no-daemon"]
+CMD ["pm2-runtime","start","/try/mlo_admin/bin/www","--name","mlo_admin","--no-daemon"]
