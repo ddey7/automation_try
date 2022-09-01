@@ -8,7 +8,7 @@ COPY package*.json ./
 
 # run installer to install all npm packages
 RUN npm install
-RUN npm install pm2 -g
+RUN npm i -g pm2
 
 # bring all the files from pc to docker
 COPY ./ ./
