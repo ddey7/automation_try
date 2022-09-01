@@ -13,7 +13,7 @@ RUN npm install pm2 -g
 # bring all the files from pc to docker
 COPY ./ ./
 
-CMD pm2-runtime ./bin/www --name mlo_admin
+CMD pm2-runtime ./bin/www --name mlo_admin --no-daemon
 
 # default command to start the project
 #CMD ["npm","start"]
