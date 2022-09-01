@@ -8,10 +8,10 @@ app.get("/", function (req, res) {
   mongoose
     .connect(DATABASE)
     .then(() => {
-      console.log("MLO Admin Connected to Mongoose");
+      res.send("MLO Admin Connected to Mongoose");
     })
     .catch(() => {
-      console.log(" MLO Admin Connection Error to Mongoose");
+      res.send(" MLO Admin Connection Error to Mongoose");
     });
 });
 
