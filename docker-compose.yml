@@ -3,13 +3,19 @@ services:
   mlo_admin:
     build:
       context: ./mlo_admin
-    restart: always
     ports:
       - "3001:3001"
 
   mlo_applicant:
     build:
       context: ./mlo_applicant
-    restart: always
     ports:
       - "3002:3002"
+
+  webserver:
+    build:
+      context: ./nginx
+    container_name: webserver
+    ports:
+      - "80:80"
+      - "443:443"
