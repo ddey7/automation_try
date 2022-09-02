@@ -17,7 +17,9 @@ services:
   webserver:
     build:
       context: ./nginx
-    container_name: webserver
+    depends_on: 
+      - mlo_admin
+      - mlo_applicant
     ports:
       - "80:80"
       - "443:443"
